@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tamil Nadu CM Selection Form</title>
+  <style>
+    body { font-family: Arial; margin: 40px; background-color: #f6f7f9; }
+    form { background: white; padding: 30px; border-radius: 10px; max-width: 500px; margin: auto; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    input, select, textarea { width: 100%; margin: 10px 0; padding: 8px; }
+    button { background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; }
+    button:hover { background-color: #0056b3; }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">Tamil Nadu CM Selection Form</h2>
+  <form action="/submit" method="post">
+    <label>Name:</label>
+    <input type="text" name="name" required>
+    
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    
+    <label>District:</label>
+    <input type="text" name="district" required>
+    
+    <label>Candidate you support:</label>
+    <select name="candidate" required>
+      <option value="">-- Select Candidate --</option>
+      <option value="Candidate A">Candidate A</option>
+      <option value="Candidate B">Candidate B</option>
+      <option value="Candidate C">Candidate C</option>
+    </select>
+    
+    <label>Comments:</label>
+    <textarea name="comments" rows="3"></textarea>
+    
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
